@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Bio-Data</title>
+    </head>
+    <body>
+        <form action = "biodata.php" method = "post">
+            <table border = "1" width = "30%" cellpadding = "5px">
+
+                <tr>
+                    <td colspan = "2"><center>Personal Details</center></td>
+                </tr>
+
+                <tr>
+                    <td>NAME:</td>
+                    <td><input type = "text" name = "name"></td>
+                </tr>
+
+                
+
+                <tr>
+                    <td>STATE:</td>
+                    <td><input type = "text" name = "state"></td>
+                </tr>
+
+                
+
+                <tr>
+                    <td>GENDER:</td>
+                    <td>
+                        <input type = "radio" value = "Female" name = "gender"> Female
+                        <input type = "radio" value = "Male" name = "gender"> Male
+                        <input type = "radio" value = "Not Specified" name = "gender"> Other 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type = "date" name = "dob"></td>
+                </tr>
+
+                <tr>
+                    <td>PHONE:</td>
+                    <td><input type = "text" name = "phone"></td>
+                </tr>
+
+                <tr>
+                    <td>E-MAIL:</td>
+                    <td><input type = "email" name = "email"></td>
+                </tr>
+
+                <tr>
+                    <td colspan = "2"><center>Educational Qualifications<center></td>
+                </tr>
+
+               
+                <tr>
+                    <td>UG:</td>
+                    <td><input type = "number" name = "ug"></td>
+                </tr>
+
+                <tr>
+                    <td>PG:</td>
+                    <td><input type = "number" name = "pg"></td>
+                </tr>
+
+                <tr>
+                    <td colspan = "2"><center>Extra-Curricular Activities</center></td>
+                </tr>
+
+                <tr>
+                    <td>KNOW LANGUAGES:</td>
+                    <td>
+                        <select name = "language">
+                            <option value="English">English</option>
+                            <option value="Malayalam">Malayalam</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>HOBBIES:</td>
+                    <td>
+                       <select name = "hobby">
+                            <option value="Reading">Reading</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Movies">Movies</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type = "submit" value = "SUBMIT"></td>
+                    <td><input type = "reset" value = "RESET"></td>
+                </tr>
+    
+            </table>
+        </form>
+    </body>
+</html>

@@ -28,7 +28,7 @@ public class Base {
             result = (decimal%base);
             convert((decimal/=base),base);
         }
-        System.out.println(numberToSymbol(result));
+        System.out.print(numberToSymbol(result));
     }
     public static void main(String[] args) throws IOException {
         InputStreamReader reader = new InputStreamReader(System.in);
