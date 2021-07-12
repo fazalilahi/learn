@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script>
+        function calculate(action) {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var result;
+            switch (action) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    if (num2 == 0)
+                        result = "undefined"
+                    else
+                        result = num1 / num2;
+                    break;
+                default:
+                    result = "invalid";
+            }
+            document.getElementById("result").value = result;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    Number 1: <input type="number" id="num1">
+    Number 2: <input type="number" id="num2">
+    <br>
+    <button onclick="calculate(this.id)" id="add"> + </button>
+    <button onclick="calculate(this.id)" id="subtract"> - </button>
+    <button onclick="calculate(this.id)" id="multiply"> x </button>
+    <button onclick="calculate(this.id)" id="divide"> / </button>
+    <br>
+    Output: <input type="text" id="result" readonly>
+</body>
+
+</html>

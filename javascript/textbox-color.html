@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Text-Box Color</title>
+    <script>
+        function change_color(color) {
+            document.getElementById("input").style.backgroundColor = document.getElementById("input").value;
+            document.getElementById("input").style.color = "white";
+        }
+
+        function revert_color() {
+            document.getElementById("input").style.background = "white";
+            document.getElementById("input").style.color = "black";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Text-Box Color</h1>
+    Enter a valid color or hex code:
+    <input type="text" id="input" onblur="change_color()" onfocus="revert_color()">
+</body>
+
+</html>

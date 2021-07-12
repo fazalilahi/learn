@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Perfect Number</title>
+    <script>
+        function factorial_sum(number) {
+            var sum = 0;
+            for (var i = 1; i < number; i++) {
+                if (number % i == 0)
+                    sum += i;
+            }
+            return sum;
+        }
+
+        function check_perfect() {
+            var number = document.getElementById("input").value;
+            var result;
+
+            if (number > factorial_sum(number))
+                result = "Abundant";
+            else if (number < factorial_sum(number))
+                result = "Deficient";
+            else
+                result = "Perfect";
+
+            alert(number + " is a " + result + " number");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Abundant, Deficient and Perfect Numbers</h1>
+    Enter the Number: <input type="number" id="input">
+    <button onclick="check_perfect()">SHOW</button>
+</body>
+
+</html>

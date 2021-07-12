@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Countries and Capitals</title>
+    <script>
+        function show_capital() {
+            var country = document.getElementById("country").value;
+            var capital;
+            switch (country) {
+                case "India": capital = "New Delhi";
+                    break;
+                case "USA": capital = "Washington DC";
+                    break;
+                case "Brazil": capital = "Brasilia";
+                    break;
+                case "China": capital = "Beijing";
+                    break;
+                case "Sri-Lanka": capital = "Colombo";
+                    break;
+                default: capital = "Unavailable!"
+            }
+            document.getElementById("capital").value = capital;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Country and Capital</h1>
+    <select id="country" onchange="show_capital()">
+        <option>India</option>
+        <option>USA</option>
+        <option>Brazil</option>
+        <option>China</option>
+        <option>Sri-Lanka</option>
+    </select>
+    <br>
+    <input type="text" id="capital">
+</body>
+
+</html>

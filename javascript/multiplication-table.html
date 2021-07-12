@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Multiplication Table</title>
+    <script>
+        function generate_mtable() {
+            var number = document.getElementById("number").value;
+            var limit = document.getElementById("limit").value;
+            var table = "<h3>Multiplication table of " + number + " (upto " + limit + ") </h3>";
+            for (var i = 1; i <= limit; i++) {
+                table += number + " X " + i + " = " + (number * i) + "<br>";
+            }
+            document.getElementById("table").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Multiplication Table</h1>
+    Number: <input type="number" id="number"><br>
+    Limit: <input type="number" id="limit"><br>
+    <button onclick="generate_mtable()">GENERATE TABLE</button>
+    <p id="table"><i>Table will be generated here</i></p>
+</body>
+
+</html>
